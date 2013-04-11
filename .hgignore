@@ -1,0 +1,19 @@
+syntax: glob
+*.orig
+*.rej
+*~
+*.bak
+*.marks
+*.o
+*.pyc
+*.swp
+*.egg-info
+.bookmarks
+MANIFEST
+build
+dist
+
+syntax: regexp
+.*\#.*\#$ 
+.test
+.tox
