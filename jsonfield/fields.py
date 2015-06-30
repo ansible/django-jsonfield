@@ -69,6 +69,7 @@ class JSONField(six.with_metaclass(models.SubfieldBase, models.Field)):
         return 'TextField'
     
     def db_type(self, connection):
+        return 'text'
         cache_key = DB_TYPE_CACHE_KEY % connection.settings_dict
         db_type = cache.get(cache_key)
         
